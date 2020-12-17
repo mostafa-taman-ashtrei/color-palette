@@ -1,0 +1,40 @@
+body {
+    margin: 15px;
+    background-Color: #1a6b64f5;
+}
+
+.palette,
+.palette * {
+    box-sizing: border-box;
+}
+
+.palette{
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.palette__color {
+    height: 150px;
+    background-color: #333333;
+    position: relative;
+}
+
+.palette__name {
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+.palette__input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #dddddd;
+    border-top: none;
+}
